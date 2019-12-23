@@ -1,14 +1,14 @@
-const express=required('express');
+const express=require('express');
 const app=express();
-const bodyParser=reqire('body-parser');
+const bodyParser=require('body-parser');
 const PORT=4000;
-const cors=reqire('cors');
+const cors=require('cors');
 
 app.user(cors());
-app.use(bodyParser.urlenconded({extended:true}));
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 app.listen(PORT,function()
 {
-    console.log('Server is running on port: ',PORT)
+    console.log('Server is running on port: ',PORT);
 });
