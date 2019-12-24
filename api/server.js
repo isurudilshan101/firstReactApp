@@ -4,8 +4,8 @@ const bodyParser=require('body-parser');
 const PORT=4000;
 const cors=require('cors');
 
-app.user(cors());
-app.use(bodyParser.urlencoded({extended:true}));
+// app.user(cors());
+// app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 app.listen(PORT,function()
